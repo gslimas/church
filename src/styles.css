@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+}
+
+@media(min-width:400px){
+    body{
+        font-size: 14px;
+    }
+}
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu{
+    width: 100vw;
+    padding: 10px;
+    border-bottom: 1px;
+    border-style: inherit;
+    position: fixed;
+    top: 0;
+    background-color:rgb(239, 241, 241);
+    box-shadow: 0px 2px 10px black;
+}
+.menu a{
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 2s, color 2s;
+}
+
+.menu a:hover{
+    background-color: rgb(113, 95, 91);
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+.menu li{
+    list-style: none;
+    position: relative;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+.site-subtitle,
+.site-title{
+    text-align: center;
+    color: black;
+}
+.portifolio .grid{
+    display: grid;
+    gap: 2em;
+}
+
+@media(min-width: 560px){
+    .portifolio .grid{
+        grid-template-columns: 240px;
+    }
+}
+@media(min-width: 880px){
+    .portifolio .grid{
+        grid-template-columns: 240px 240px 240px;
+        justify-content: center;
+    }
+}
+.portifolio figure{
+    text-align: center;
+}
+.site-title{
+    font-family: 'Pacifico', cursive;
+}
+.site-subtitle{
+    font-family: 'Indie Flower', cursive;
+}
+.contato h2,
+.portifolio h2{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+.contato,
+.portifolio{
+    padding: 2em;
+    min-height: 100vh;
+}
+
+.img-profile{
+    width: auto;
+    height: 100%;
+    
+}
+
+.image-cropper{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px black;
+}
+
+.img-portfolio{
+    width: 230px;
+    height: 230px;
+}
+
+figcaption{
+    font-size: 20px;
+}
+.contato a{
+    color: black;
+    font-size: 8em;
+    transition: text-shadow 1s;
+    
+}
+.contato a:hover{
+    text-decoration: none;
+    text-shadow: 0px 5px 10px black;
+}
+.contato .icons{
+    text-align: center;
+}
